@@ -1,0 +1,10 @@
+lista_alunos = []
+
+nome = input("Digite o nome do aluno (ou 'fim' para encerrar): ")
+while nome.lower() != 'fim':
+    lista_alunos.append(nome)  # Adiciona o nome à lista de alunos
+    nome = input("Digite o nome do próximo aluno (ou 'fim' para encerrar): ")
+
+print("\nLista de alunos:")
+for aluno in lista_alunos:
+    print(aluno)
